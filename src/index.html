@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Express Multer Uploads</title>
+</head>
+
+<body>
+  <style>
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 500px;
+      margin: 1rem auto;
+    }
+    input {
+      margin-bottom: 1rem;
+    }
+  </style>
+  <h1>Express Multer Uploads!</h1>
+  <form action="/" method="POST" enctype="multipart/form-data">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" minlength="1" maxlength="64" required>
+    <label for="file">File</label>
+    <input type="file" name="file" id="file" accept="video/*">
+    <button type="submit">Send</button>
+  </form>
+</body>
+
+</html>
